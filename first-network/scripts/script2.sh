@@ -77,6 +77,9 @@ joinChannel () {
 echo "Querying chaincode on peer1.org1..."
 chaincodeQuery  1 1 90
 
+echo "Joining... peer2 of org2 to network......"
+joinChannelWithRetry 2 2
+
 echo
 echo "========= All GOOD, BYFN execution completed =========== "
 echo
